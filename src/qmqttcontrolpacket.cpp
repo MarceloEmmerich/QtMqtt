@@ -123,7 +123,6 @@ QMqttConnectControlPacket::QMqttConnectControlPacket(const QString &clientIdenti
     m_keepAlive(30),
     m_clientIdentifier(clientIdentifier)
 {
-    Q_ASSERT(clientIdentifier.length() < 24);
 }
 
 void QMqttConnectControlPacket::setCredentials(const QString &userName, const QByteArray &password)
